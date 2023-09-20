@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "train": "node train.js"
+    "train": "node train.js",
+    "dev": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Abrahmbek/yangi#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "moment": "^2.29.4"
   }
 }
