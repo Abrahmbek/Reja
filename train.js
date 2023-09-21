@@ -82,7 +82,7 @@ class Shop {
 
      xabar(){
       const time = moment().format("HH:MM:SS");
-      console.log(`[${time}] eslatma mahsulot:,`, this.mahsulotlar);
+      console.log(`[${time}] da xabar mahsulotlar mavjud,`, this.mahsulotlar);
      }
 
      sotuv(mahsulot, mavjud){
