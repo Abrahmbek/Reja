@@ -121,3 +121,4 @@ shop.xabar();
 shop.sotuv('choy', 3);
 shop.qabul('pista', 4);
 shop.qoldiq();
+//fishupsbvs

@@ -1,0 +1,188 @@
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e5e5e5;
+
+}
+
+
+.main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+    background-color: #ffb400;
+}
+
+.main_frame .left_frame {
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background-color: white;
+}
+.main_frame .mid_frame {
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+ .rigt_frame {
+    position: relative;
+    width: 108px;
+    height: 1315px;
+   background-color: white;
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+ }
+ .main_frame.left_1 {
+    position: relative;
+    width: 228px;
+    height: 267px;
+    margin-top: 50px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .main_frame .left_1 .left_1-1 {
+display: flex;
+flex-direction: column;
+position: relative;
+width: 156px;
+height: 142px;
+margin-bottom: 29px;
+ }
+
+
+ .main_frame .marginer {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 25;
+
+    border: 1.5px solid #f0f0f6
+ }
+
+ .main_frame .left_2 {
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-top: 25px;
+    margin-left: 37px;
+ }
+
+ .left_1-2 {
+  position: relative;
+  width: 66px;
+  height: 20px;
+  margin-bottom: 6.65px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: #2B2B2B;
+
+ }
+
+ .main_frame .left_frame .left_3 {
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-left: 45px;
+    margin-top: 25px;
+ }
+ 
+ .main_frame .left_frame .left_1-3{
+ position: relative;
+ width: 147px;
+ height: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+ font-family: sans-serif;
+ font-style: normal;
+ font-size: 15px;
+ line-height: 24px;
+
+ 
+ text-transform: capitalize;
+ color: #767676
+ }
+
+.left-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 128px;
+    margin-top: 19px;
+}
+
+
+.link_href {
+text-decoration: none;
+color: black;
+
+}
+.icon {
+    position: relative;
+    width: 24px;
+    height: 22px;
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 4px black);
+    background: #ffb400;
+}
+
+.icon-1 {
+    position: relative;
+    left: 29%;
+    right: 27%;
+    margin-top: 5.86px;
+}
+
+
+ .main_frame .left_frame .left_4 {
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-top: 25px;
+    margin-left: 45px;
+ }
+
+ .main_frame .left_frame .left_5 {
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-top: 25px;
+    margin-left: 45px;
+ }
+

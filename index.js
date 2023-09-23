@@ -68,23 +68,23 @@
 // file modullar
 
 
-const { log } = require('console');
+// const { log } = require('console');
 
-const calculate = require("./hisob.js");
+// const calculate = require("./hisob.js");
 
-const natija = calculate.kopaytirish(20,15);
-console.log("natija:", natija);
+// const natija = calculate.kopaytirish(20,15);
+// console.log("natija:", natija);
 
-console.log("========================");
+// console.log("========================");
 
-const natija2 = calculate.ayrish(20,15);
-console.log("natija:", natija2);
+// const natija2 = calculate.ayrish(20,15);
+// console.log("natija:", natija2);
 
-console.log("========================");
+// console.log("========================");
 
-const natija3 = calculate.ayrish(20,15);
-console.log("natija:", natija3);  
-console.log(require('module').wrapper);
+// const natija3 = calculate.ayrish(20,15);
+// console.log("natija:", natija3);  
+// console.log(require('module').wrapper);
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Account js dan olingan bolim
