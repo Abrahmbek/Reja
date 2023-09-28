@@ -1,7 +1,31 @@
 {
     "name": "Abrahm",
     "profession": "Software Engineer",
-    "age": "30",
-    "residance": "S.Korea",
-    "adress": "S.KOrea, Jeonju"
-}
+    "age": 30,
+    "residence": " Seol,S.Korea",
+    "address": "Seoul,S.Korea",
+    "freelance": "Available",
+    "languages": ["Uzbek", "English", "Korean"],
+    "skills": ["Html", "Css", "JavaScript", "NodeJS", "Python"],
+    "extra_skills": [
+      "Bootstrap, Materialize",
+      "Styling, Figma",
+      "Django, Flask",
+      "GitHub Knowledge"
+    ],
+    "work_place": "IT company",
+    "service_desc": "Amit mollin nun",
+    "about_me": "I am a full-stack(MERN) senior web developer  with 2-year-experience in Software engineering field.",
+    "service": "I can build a website for your start-up and also maintain the existing web application and optimize them with latest technologies.",
+    "city": "Seoul",
+    "title": ["Flower", "SeedLings", "Garden", "Old", "New"],
+    "flower_desc": [
+      "What is a flower?",
+      "What is Seedling?",
+      "Who is the Gardener?"
+    ],
+    "flower_name": ["Tulip", "Poppy", "Rose"],
+    "flower_price": ["15$", "25$", "40$"],
+    "famous_words": ["World is beautiful with flowers"],
+    "famous_name": ["Steve Jobs"]
+  }
