@@ -166,30 +166,30 @@
 
 // asynchronous functionlarni qullash
 
-console.log("jack ma maslahatlari");
-const list =[
-  "yaxshi talaba boling",
-  "togri boshliq tanlang", 
-  "uzingizga ishlashni boshlang",
-  "siz kuchli bo'lgan narsalarni qiling",
-  "yoshlarga invistitsiya qiling",
-  "endi dam oling , foydasi yoq",
-];
+// console.log("jack ma maslahatlari");
+// const list =[
+//   "yaxshi talaba boling",
+//   "togri boshliq tanlang", 
+//   "uzingizga ishlashni boshlang",
+//   "siz kuchli bo'lgan narsalarni qiling",
+//   "yoshlarga invistitsiya qiling",
+//   "endi dam oling , foydasi yoq",
+// ];
 
-async function advise(age) {
-if (typeof age !=="number") throw new Error("insert a number");
-else if (age <=20) return list[0];
-else if (age >20 && age <= 30) return list[1];
-else if (age >20 && age <= 30) return list[2];
-else if (age >20 && age <= 30) return list[3];
-else if (age >20 && age <= 30) return list[4];
-else {
+// async function advise(age) {
+// if (typeof age !=="number") throw new Error("insert a number");
+// else if (age <=20) return list[0];
+// else if (age >20 && age <= 30) return list[1];
+// else if (age >20 && age <= 30) return list[2];
+// else if (age >20 && age <= 30) return list[3];
+// else if (age >20 && age <= 30) return list[4];
+// else {
   
-  return new Promise((resolve, reject) =>{
-    setTimeout(()  => {
-     resolve(list[5]);
-    },3000);
-  });
+//   return new Promise((resolve, reject) =>{
+//     setTimeout(()  => {
+//      resolve(list[5]);
+//     },3000);
+//   });
   
   
   
@@ -197,8 +197,8 @@ else {
   //   callback(null, list[5]);
   // }, 5000);
   
-  }
-}
+//   }
+// }
 
 // then catch orqali ishlatdik
 
@@ -212,16 +212,28 @@ else {
 // });
 
 
-async function run() {
-  let javob = await advise(25);
-  console.log(javob);                           // bu yerta ketma ketlik bilan keyingi javobga otadi 
-  javob = await advise(47);                     // birinchisidan javob kelmaguncha ikkinchisiga otmaydi
-  console.log(javob);
-  javob = await advise(60);
-  console.log(javob);
-}
-run();
+// async function run() {
+//   let javob = await advise(25);
+//   console.log(javob);                           // bu yerta ketma ketlik bilan keyingi javobga otadi 
+//   javob = await advise(47);                     // birinchisidan javob kelmaguncha ikkinchisiga otmaydi
+//   console.log(javob);
+//   javob = await advise(60);
+//   console.log(javob);
+// }
+// run();
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//task E
+
+function teskari_soz(matn) {           //teskari soz degan funksiya ichida string yani matn belon qildik
+  return matn.split('').reverse().join('');   // bu matnni split yordamida bolib olib uni reverse yordamida teskarisiga ogirib oldik va yana qata join qildik
+}
+
+const Soz_kiriting = "bir nima";  // soz  kiriting degan ozgaruvchi bor
+const teskari = teskari_soz(Soz_kiriting);    // uni teskari degan ozgaruvchiga tenglab pastta log qildik
+console.log(teskari); 
 
 
 
