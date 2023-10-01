@@ -227,13 +227,32 @@
 
 //task E
 
-function teskari_soz(matn) {           //teskari soz degan funksiya ichida string yani matn belon qildik
-  return matn.split('').reverse().join('');   // bu matnni split yordamida bolib olib uni reverse yordamida teskarisiga ogirib oldik va yana qata join qildik
+// function teskari_soz(matn) {           //teskari soz degan funksiya ichida string yani matn belon qildik
+//   return matn.split('').reverse().join('');   // bu matnni split yordamida bolib olib uni reverse yordamida teskarisiga ogirib oldik va yana qata join qildik
+// }
+
+// const Soz_kiriting = "bir nima";  // soz  kiriting degan ozgaruvchi bor
+// const teskari = teskari_soz(Soz_kiriting);    // uni teskari degan ozgaruvchiga tenglab pastta log qildik
+// console.log(teskari); 
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// task f
+
+function top(matn) {
+  for (let i = 0; i < matn.length; i++) {
+    if (matn.indexOf(matn[i]) !== i) {
+      return true;
+    }
+  }
+  return false;
 }
 
-const Soz_kiriting = "bir nima";  // soz  kiriting degan ozgaruvchi bor
-const teskari = teskari_soz(Soz_kiriting);    // uni teskari degan ozgaruvchiga tenglab pastta log qildik
-console.log(teskari); 
+
+console.log(top("abbos"));  
+console.log(top("salom"));  
 
 
 
