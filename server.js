@@ -23,7 +23,7 @@ mongodb.connect(                        //mongo db ni 3 xil yol bilan elon qilib
            
             const app = require("./app");                  // app js ni sorab oldik shu yerda ishga tushiryapmiz
             const server = http.createServer(app);             // http server yartib ichida app ni chaqirib olyapmiz
-            let PORT = 3001;                                    //port 3000 da korsat deyapmiz
+            let PORT = 5005;                                    //port 3000 da korsat deyapmiz
            
             server.listen(PORT, function() {                   
                 console.log(
