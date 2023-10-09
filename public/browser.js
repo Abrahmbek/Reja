@@ -36,21 +36,21 @@ e.preventDefault();
 });
 
 
-document.addEventListener("click", function(e){
+document.addEventListener("click", function(e){      // browserdagi btn larni bosganda xozil boladi function e aynan nima bosilganini qolga kirirtib beradi
       //delete oper
-      console.log(e.target);
-    if(e.target.classList.contains("delete-me")) {    // ejs da classlist contains ichidan delete me button ni ushlab oldik
+      console.log(e.target);                       // e ni ichidagi target  target bu edit me, btn ... va boshqalar
+    if(e.target.classList.contains("delete-me")) {    // ejs da classlist ichidan contains buyrugi orqali  delete me button ni ushlab oldik
       
       
         if(confirm('are you sure?')) {                //confirm browserga tegishli js bilan birga ishlaydi
             axios
-            .post("/delete-item", {id: e.target.getAttribute("data-id")})
-            .then((response) => {
-                console.log(response.data);
-                e.target.parentElement.parentElement.remove();
+            .post("/delete-item", {id: e.target.getAttribute("data-id")})  // axios da post qilamiz va u backent ga boradi id 
+            .then((response) => {             // response ornida dat ham kelishi mn
+                console.log(response.data);        // shu yergacha db dan malumotlani ochrirb bizaga qaytib keldi
+                e.target.parentElement.parentElement.remove(); // bu yerda agar delete bosadigan bolsak browserdan ham ochirib tashlaydi
             })
             .catch((err) =>{
-                console.log("qaytadan xarakat qiling");
+                console.log("qaytadan xarakat qiling");    // agarda qandaydir xatolik bolsa uni bizga korsatadi
             });
         }                                             
         
@@ -59,20 +59,20 @@ document.addEventListener("click", function(e){
 // edit qismi
    
    if(e.target.classList.contains("edit-me")) {
-       let userInput = prompt("ozgartirish kirirting",
-        e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+       let userInput = prompt("ozgartirish kirirting",         // prompt bu browserni maxsus kamandasi
+        e.target.parentElement.parentElement.querySelector(".item-text").innerHTML  //ozgartirish kiritmoqchi bolagnimizda bizga 0 da boshlab qiymat emaas textni chiqarib bersin
        );
        if (userInput) {
-        axios
+        axios                      //biz yangi qiymat kirityapmi va uni axios orqali post qilyapmiz
         .post("/edit-item", {
             id: e.target.getAttribute("data-id"),
-            new_input: userInput,
+            new_input: userInput,       // new input bu yerda yangi textimiz 
             })
             .then((response )=>{
             console.log(response.data);
             e.target.parentElement.parentElement.querySelector(
                 ".item-text"
-                ).innerHTML = userInput;
+                ).innerHTML = userInput;      // yangi berilagn qiymatka tenglashtirib olamiz
 
         })
         .catch((err) =>{
@@ -85,10 +85,11 @@ document.addEventListener("click", function(e){
 
   document.getElementById("clean-all").addEventListener("click", function() {
     axios
-    .post("/delete-all", {delete_all: true })
+    .post("/delete-all", {delete_all: true })         //delete -all degan api xosil qilaypmiz
     .then((response) => {
         alert(response.data.state);
-        document.location.reload();
+       // document.location.reload();    // browserimizni reload qilib clean qilib beryapti
+       document.querySelector("#item-list").innerHTML = "";
     });
   });
 
